@@ -9,7 +9,7 @@ function create(i) {
   $('<div class="confetti-'+i+'">'+word+'</div>').css({
     "height" : height+"px",
     "top" : -Math.random()*20+"%",
-    "left" : Math.random()*90+"%",
+    "left" : Math.random()*100+"%",
     "opacity" : Math.random() / 2 + 0.1,
     "transform" : "rotate("+Math.random()*360+"deg)"
   }).appendTo('.wrapper');
@@ -19,8 +19,7 @@ function create(i) {
 
 function drop(x) {
   $('.confetti-'+x).animate({
-    top: "100%",
-    left: "+="+Math.random()*15+"%"
+    top: "100%"
   }, Math.random()*3000 + 3000, function() {
     reset(x);
   });
@@ -28,8 +27,7 @@ function drop(x) {
 
 function reset(x) {
   $('.confetti-'+x).animate({
-    "top" : -Math.random()*20+"%",
-    "left" : "-="+Math.random()*5+"%"
+    "top" : -Math.random()*20+"%"
   }, 0, function() {
     drop(x);
   });
