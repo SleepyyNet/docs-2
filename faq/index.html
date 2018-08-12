@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#54338C">
+    <meta name="msapplication-navbutton-color" content="#54338C">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#54338C">
+    <meta name="description" content="Frequently asked questions about TwitchBot and its features.">
+    <!-- Open Graph Protocol - https://ogp.me -->
+    <meta property="og:title" content="FAQ - TwitchBot">
+    <meta property="og:url" content="https://twitch.disgd.pw/faq">
+    <meta property="og:description" content="Frequently asked questions about TwitchBot and its features.">
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/375805687529209857/7528f050ec2521877bcfa1abe3cfbab4.png">
+    <meta property="og:type" content="website">
+    <title>FAQ - TwitchBot</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89117598-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-89117598-3');
+    </script>
+    <!-- End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async defer src="/assets/nav.js"></script>
+</head>
+<body>
+    <div class="logged-in-ctx" style="display:none">
+        <a href="#features" only-mobile>Features</a>
+        <a href="#invite" only-mobile>Invite</a>
+        <a href="/faq" only-mobile>FAQ</a>
+        <a href="https://discord.gg/UNYzJqV" only-mobile>Support</a>
+        <a href="https://discordbots.org/bot/twitch/vote" only-mobile>Upvote</a>
+        <div class="sep" only-mobile></div>
+        <a href="https://twitch.tv/twitchbot_discord">Twitch</a>
+        <a href="https://github.com/twitchbot-discord">GitHub</a>
+        <div class="sep"></div>
+        <a href="https://discordbots.org/bot/twitch">discordbots.org</a>
+        <a href="https://bots.discord.pw/bots/375805687529209857">bots.discord.pw</a>
+        <a href="https://botsfordiscord.com/bot/375805687529209857">botsfordiscord.com</a>
+        <a href="http://bots.disgd.pw/bot/375805687529209857">bots.disgd.pw</a>
+        <div class="sep"></div>
+        <a href="/partners">Partners</a>
+        <a href="/translators">Translators</a>
+        <div class="sep"></div>
+        <a href="https://paypal.me/akireee">Donate</a>
+        <a href="/terms">Legal</a>
+    </div>
+    <nav>
+        <span><a class="main" href="/">TwitchBot</a></span>
+        <span style="padding-left:10px;float:right">
+            <a href="#features" no-mobile>Features</a>
+            <a href="#invite" no-mobile>Invite</a>
+            <a href="/faq" no-mobile>FAQ</a>
+            <a href="https://discord.gg/UNYzJqV" no-mobile>Support</a>
+            <a href="https://discordbots.org/bot/twitch/vote" no-mobile>Upvote</a>
+            <a id="more" href="javascript:toggleNavOpts()"><i class="fas fa-chevron-down"></i></a>
+        </span>
+    </nav>
+    <header minimal>
+        <h1>Frequently Asked Questions</h1>
+        <h2 style="max-width:550px;margin:1em auto;">These are the most frequently asked questions about TwitchBot and its features.</h2>
+    </header>
+    <div class="section">
+        <h3>What is TwitchBot's prefix?</h3>
+        <p>TwitchBot's prefix is <code>twitch</code>. The bot doesn't respond to commands through anything else or @mentions.</p>
+    </div>
+    <div class="section">
+        <h3>What are TwitchBot's commands?</h3>
+        <p>You can view a list of commands by typing <code>twitch commands</code>. If you need more general help, type <code>twitch help</code>.</p>
+    </div>
+    <div class="section">
+        <h3>How do I upvote TwitchBot?</h3>
+        <p>Go to <a href="https://discordbots.org/bot/twitch/vote" target="_blank">https://discordbots.org/bot/twitch/vote</a>. Log in with Discord if you haven't already, and press the button that says "Vote for this bot". Keep in mind that you need to vote every 12 hours to use audio.</p>
+    </div>
+    <div class="section">
+        <h3>I just upvoted, why doesn't the bot say I've done it?</h3>
+        <p>This is due to a delay in the upvoting website. Please wait about 5 to 10 minutes for your upvote to register.</p>
+    </div>
+    <div class="section">
+        <h3>How do I add a stream notification?</h3>
+        <p>You need to specify the streamer's Twitch name and the Discord channel you want it to trigger in. For example, typing <code>twitch notif add #general twitchbot_discord</code> will add a notification for twitch.tv/twitchbot_discord in the general channel.</p>
+    </div>
+    <div class="section">
+        <h3>Why do I get "not a valid Twitch user"?</h3>
+        <p>This happens when you put special characters in a command. All Twitch usernames are limited to a-z 0-9 and underscores, so trying to enter a username that is definitely invalid will not work. This is to help us reduce our API calls to Twitch.</p>
+    </div>
+    <div class="section">
+        <h3>How do I add a custom message to a stream notification?</h3>
+        <p>You can simply add in the custom message after the command you would normally enter. For example: <code>twitch notif add #general twitchbot_discord Hey @everyone, TwitchBot is live!</code>. Markdown also works in descriptions.</p>
+    </div>
+    <div class="section">
+        <h3>How can I see who is set up for notifications?</h3>
+        <p>Type <code>twitch notif list #channel</code> to view the notifications set up in the specified channel.</p>
+    </div>
+    <div class="section">
+        <h3>How do I set up live checking?</h3>
+        <p>Type <code>twitch live_check role</code> replacing "role" with the exact, case-sensitive name of the role you want to add to users when they go live. If you get a permission error, see the question below.</p>
+    </div>
+    <div class="section">
+        <h3>Live checking isn't working</h3>
+        <p>TwitchBot most likely doesn't have adequate permissions to add and remove users' roles. TwitchBot needs the manage roles permission to do live checking. The role that you want to add to live checking should also be below the role named TwitchBot.</p>
+    </div>
+    <div class="section">
+        <br><br><br><br>
+        <h3>Question not listed, or need more help?</h3>
+        <p>Feel free to join the <a href="https://discord.gg/UNYzJqV">support server</a> and one of our helpful staff will answer your question.</p>
+        <br><br><br>
+    </div>
+    <footer>
+        <div class="content">
+            <h3 style='font-family:"Uni Sans";font-size:1.5em;margin-bottom:7px'>TwitchBot</h3>
+            <span style="margin-top:5px;">
+                <a class="brand discord" href="https://discord.gg/UNYzJqV"><i class="fab fa-discord"></i></a>
+                <a class="brand twitch" href="https://twitch.tv/twitchbot_discord"><i class="fab fa-twitch"></i></a>
+                <a class="brand patreon" href="https://www.patreon.com/devakira"><i class="fab fa-patreon"></i></a>
+                <a class="brand paypal" href="https://www.paypal.me/akireee"><i class="fab fa-paypal"></i></a>
+                <a class="brand github" href="https://github.com/twitchbot-discord"><i class="fab fa-github"></i></a>
+                <a class="brand twitter" href="https://twitter.com/AkiraDev_"><i class="fab fa-twitter"></i></a>
+            </span>
+            <span style="margin-top:20px">Made by <a href="https://disgd.pw">Akira#4587</a>. Copyright &copy; 2018.</span>
+            <span style="font-size:.75em;opacity:.6;margin-top:10px"><a href="https://icons8.com">Icons by icons8.com</a></span>
+        </div>
+    </footer>
+</body>
+</html>

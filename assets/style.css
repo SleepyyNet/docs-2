@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Poppins:600|Inconsolata');
+@font-face {
+    font-family: 'Uni Sans';
+    src: url("Uni Sans Heavy.otf");
+}
+
+body {
+    background-color: #17242d;
+    color: #eef1f2;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {font-weight: 400;}
+img, .button, nav * {user-select: none; -moz-user-select: none;}
+code {font-family: 'Inconsolata', monospace; background-color: #12191f; padding: 4px}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding: 1.2rem;
+    background-color: #54338C;
+}
+
+nav a:not(.main) {
+    font-size: .875em;
+    color: rgba(255,255,255,.7);
+    padding: 0 10px;
+}
+
+nav .main {
+    color: white;
+}
+
+header {
+    min-height: 400px;
+    background: #54338C url('bg.svg') no-repeat center center;
+    background-size: cover;
+    padding: 1em;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+header[minimal] {
+    min-height: 200px;
+}
+
+header h1 {
+    font-size: 2.75em;
+    font-family: 'Uni Sans', 'Poppins', 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.section {
+    margin: 2em auto;
+    padding: 0 2em;
+    max-width: 700px;
+}
+
+.logged-in-ctx {
+    padding: .1rem;
+    background-color: #12191f;
+    z-index: 10001;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: absolute;
+    width: 140px;
+    text-align: left;
+}
+
+.logged-in-ctx .sep {
+    height: 1px;
+    background-color: rgba(255,255,255,.2);
+    margin: 0 .5rem;
+}
+
+.logged-in-ctx a {
+    margin: .5rem;
+    padding: 0 !important;
+    display: block;
+    color: white;
+    opacity: .5;
+    font-size: .8em;
+}
+
+.button {
+    margin: 6px 8px;
+    padding: 12px 36px;
+    border-radius: 1000px;
+    background-color: white;
+    color: rgba(0,0,0,.8);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 7em 0;
+}
+
+.card img {
+    height: 86px;
+    width: 86px;
+    margin-right: 25px;
+}
+
+.section h3 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.section h1 {
+    font-family: 'Uni Sans', 'Poppins', 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.section p {
+    margin-bottom: 0;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.section a:not(.button), footer a {
+    color: #eef1f2;
+    padding-bottom: 3px;
+    border-bottom: 2px dotted;
+}
+
+footer {
+    background-color: #12191f;
+    padding: 1.2rem;
+    margin-top: 20px;
+}
+
+footer .content {
+    max-width: 650px;
+    margin: auto;
+}
+
+footer span {
+    display: block;
+    font-size: .9em;
+}
+
+.invite-banner {
+    background-color: white;
+    color: #12191f;
+    padding: .8rem;
+    font-size: .9em;
+    text-align: center;
+}
+
+.brand {
+    padding: 8.5px;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 5px;
+    border-bottom: none;
+}
+
+.brand:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.brand.discord {
+    background-color: #7289da;
+    padding-left: 10.5px;
+}
+
+.brand.twitter {
+    background-color: #1da1f2;
+}
+
+.brand.paypal {
+    background-color: #003087;
+    padding-left: 12px;
+    padding-right: 6.5px;
+}
+
+.brand.patreon {
+    background-color: #f96854;
+}
+
+.brand.github {
+    color: #333;
+    background-color: white;
+    padding: 7.5px 9px 9px;
+}
+
+.brand.twitch {
+    background-color: #54338C;
+    padding-left: 11px;
+    padding-right: 7.5px;
+}
+
+*[only-mobile], .logged-in-ctx a[only-mobile] {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    *[no-mobile] {
+        display: none;
+    }
+
+    *[only-mobile], .logged-in-ctx a[only-mobile] {
+        display: block;
+    }
+}
