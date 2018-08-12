@@ -95,6 +95,7 @@ header h1 {
     color: rgba(0,0,0,.8);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .card {
@@ -213,7 +214,7 @@ footer span {
     display: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     *[no-mobile] {
         display: none;
     }
