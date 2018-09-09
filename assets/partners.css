@@ -205,3 +205,9 @@ header h2 {
     max-width: 550px;
     margin: 1em auto;
 }
+
+.notice {
+    color: white;
+    background-color: #E94A3F;
+    padding: 1rem;
+}

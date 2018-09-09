@@ -63,7 +63,7 @@
             <a href="#invite" no-mobile>Invite</a>
             <a href="/faq" no-mobile>FAQ</a>
             <a href="https://discord.gg/UNYzJqV" no-mobile>Support</a>
-            <a href="https://discordbots.org/bot/twitch/vote" no-mobile>Upvote</a>
+            <a href="https://discordbots.org/bot/twitch/vote" no-mobile>Upvote <span id="upvote-count">0</span></a>
             <a id="more" href="javascript:toggleNavOpts()"><i class="fas fa-chevron-down"></i></a>
         </span>
     </nav>
@@ -74,13 +74,15 @@
             <a class="button" href="https://discordapp.com/oauth2/authorize?client_id=375805687529209857&permissions=305589334&scope=bot&response_type=code&redirect_uri=https://twitch.disgd.pw/thanks.html">Add to Discord</a>
             <a class="button" href="https://discord.gg/UNYzJqV">Support Server</a>
         </p>
-        <span style="opacity:.8;font-size:.8em;display:block;margin-top:28px;">TwitchBot is trusted in <b id="servcnt">???</b> servers</span>
+        <span style="opacity:.8;font-size:.8em;display:block;margin-top:28px;">TwitchBot is trusted in <b id="servcnt">0</b> servers</span>
     </header>
     <script async defer>
     $.getJSON("https://discordbots.org/api/bots/twitch", function(data) {
         $("#servcnt").html(data.server_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+        $("#upvote-count").html(data.points.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
     }).fail(function() {
         $("#servcnt").parent().css("display", "none");
+        $("#upvote-count").parent().css("display", "none");
     });
     if (window.location.search.includes("invited")) {
         $(".invite-banner").css("display", "block");

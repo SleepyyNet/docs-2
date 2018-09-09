@@ -238,6 +238,14 @@ footer span {
     background-color: #eef1f2;
 }
 
+#upvote-count {
+    background-color: white;
+    color: black;
+    margin-left: 3px;
+    padding: 1px 5px;
+    border-radius: 999px;
+}
+
 *[only-mobile], .logged-in-ctx a[only-mobile] {
     display: none;
 }
