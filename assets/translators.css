@@ -187,7 +187,7 @@ header h2 {
 }
 
 .progress {
-    background-color: rgb(252, 252, 252);
+    background-color: #e3e3e3;
     height: 15px;
     border-radius: 15px;
 }
@@ -255,4 +255,30 @@ code.preview .v {
 
 code.preview .k {
     color: rgb(240, 71, 71);
+}
+
+.phase {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.phase .phase-marker {
+    height: 10px;
+    width: 10px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.phase .phase-marker.long {
+    height: 50px;
+}
+
+.phase .phase-marker.completed {
+    background-color: rgb(67, 181, 129);
+}
+
+.phase .phase-marker.in-progress {
+    background-color: rgb(250, 166, 26);
 }
