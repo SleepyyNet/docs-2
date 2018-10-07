@@ -152,12 +152,22 @@ footer span {
     font-size: .9em;
 }
 
-.invite-banner {
+.invite-banner, .banner {
     background-color: white;
     color: #12191f;
     padding: .8rem;
     font-size: .9em;
     text-align: center;
+}
+
+.banner {
+    background-color: rgb(52, 152, 219);
+    color: white;
+}
+
+.banner a {
+    color: white;
+    text-decoration: underline;
 }
 
 .brand {
