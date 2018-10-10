@@ -37,8 +37,9 @@ nav .main {
 
 header {
     min-height: 400px;
-    background: #54338C url('bg.svg') no-repeat center center;
-    background-size: cover;
+    /*background: #54338C url('bg.svg') no-repeat center center;
+    background-size: cover;*/
+    background: linear-gradient(135deg, #E67D21, #D35400);
     padding: 1em;
     padding-top: 5em;
     padding-bottom: 2em;
@@ -153,8 +154,8 @@ footer span {
 }
 
 .invite-banner, .banner {
-    background-color: white;
-    color: #12191f;
+    background-color: black;
+    color: white;
     padding: .8rem;
     font-size: .9em;
     text-align: center;
