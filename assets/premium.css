@@ -1,0 +1,38 @@
+header .header-container {
+    margin: auto;
+    max-width: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+header .main-content {
+    max-width: 500px;
+    text-align: left;
+    flex-grow: 0;
+}
+
+header .img {
+    margin-left: 25px;
+    height: 125px;
+    width: 125px;
+    margin-bottom: 80px;
+    transition: transform .3s;
+    transform: rotate(0deg);
+}
+
+header .img:hover {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 670px) {
+    header .img {
+        display: none;
+    }
+
+    header .main-content {
+        text-align: center;
+        max-width: none;
+    }
+}

@@ -10,8 +10,10 @@ function toggleNavOpts() {
     moveCtxMenu();
     if (isOpen) {
         $(".logged-in-ctx").css("display", "none");
+        $("a#more .fas").css("transform", "rotate(0deg)");
     } else {
         $(".logged-in-ctx").css("display", "block");
+        $("a#more .fas").css("transform", "rotate(180deg)");
     }
     isOpen = !isOpen;
 }

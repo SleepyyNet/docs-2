@@ -18,6 +18,11 @@ code {font-family: 'Inconsolata', monospace; background-color: #12191f; padding:
 
 a {
     text-decoration: none;
+    outline: none;
+}
+
+a#more .fas {
+    transition: transform .5s;
 }
 
 nav {
@@ -37,9 +42,8 @@ nav .main {
 
 header {
     min-height: 400px;
-    /*background: #54338C url('bg.svg') no-repeat center center;
-    background-size: cover;*/
-    background: linear-gradient(135deg, #E67D21, #D35400);
+    background: #54338C url('bg.svg') no-repeat center center;
+    background-size: cover;
     padding: 1em;
     padding-top: 5em;
     padding-bottom: 2em;
@@ -90,13 +94,17 @@ header h1 {
 
 .button {
     margin: 6px 8px;
-    padding: 12px 36px;
-    border-radius: 1000px;
-    background-color: white;
-    color: rgba(0,0,0,.8);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 12px 17px;
+    border-radius: 4px;
+    background-color: rgb(67, 181, 129);
+    color: rgba(255,255,255,.8);
     cursor: pointer;
     white-space: nowrap;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.button:not(.default) {
+    background-color: #283f4f;
 }
 
 .card {
