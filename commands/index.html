@@ -14,7 +14,7 @@
     <meta property="og:description" content="Frequently asked questions about TwitchBot and its features.">
     <meta property="og:image" content="https://cdn.discordapp.com/avatars/375805687529209857/7528f050ec2521877bcfa1abe3cfbab4.png">
     <meta property="og:type" content="website">
-    <title>FAQ - TwitchBot</title>
+    <title>Commands - TwitchBot</title>
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -77,58 +77,53 @@
         </span>
     </nav>
     <header minimal>
-        <h1>Frequently Asked Questions</h1>
-        <h2 style="max-width:550px;margin:1em auto;">These are the most frequently asked questions about TwitchBot and its features.</h2>
+        <h1>Commands List</h1>
+        <h2 style="max-width:550px;margin:1em auto;">View all of TwitchBot's commands here.</h2>
     </header>
     <div class="section">
-        <h3>What is TwitchBot's prefix?</h3>
-        <p>TwitchBot's prefix is <code>twitch</code> (or <code>!twitch</code>). The bot doesn't respond to commands through anything else or @mentions.</p>
+        <p>Type <code>twitch help</code> or <code>!twitch help</code> in Discord to see more detailed help. To view commands, type <code>twitch commands</code>. To view help on a specific command, type <code>twitch help (command name)</code>.</p>
     </div>
     <div class="section">
-        <h3>What are TwitchBot's commands?</h3>
-        <p>You can view a list of commands by typing <code>twitch commands</code> or by going to the <a href="https://twitchbot.io/commands">commands page</a>. If you need more general help, type <code>twitch help</code>.</p>
-    </div>
-    <div class="section">
-        <h3>Why does TwitchBot show a blank help message?</h3>
-        <p>This is because you have disabled a setting within Discord. You need to <a href="https://imgur.com/yfoOqe8" target="_blank">re-enable this setting</a> by going to Settings > Text & Images and turning on the setting named "Show website preview info from links pasted into chat".</p>
-    </div>
-    <div class="section">
-        <h3>How do I upvote TwitchBot?</h3>
-        <p>Go to <a href="https://discordbots.org/bot/twitch/vote" target="_blank">https://discordbots.org/bot/twitch/vote</a>. Log in with Discord if you haven't already, and press the button that says "Vote for this bot". Keep in mind that you need to vote every 12 hours to use audio.</p>
-    </div>
-    <div class="section">
-        <h3>I just upvoted, why doesn't the bot say I've done it?</h3>
-        <p>This is due to a delay in the upvoting website. Please wait about 5 to 10 minutes for your upvote to register.</p>
-    </div>
-    <div class="section">
-        <h3>How do I add a stream notification?</h3>
-        <p>You need to specify the streamer's Twitch name and the Discord channel you want it to trigger in. For example, typing <code>twitch notif add #general twitchbot_discord</code> will add a notification for twitch.tv/twitchbot_discord in the general channel.</p>
-    </div>
-    <div class="section">
-        <h3>Why do I get "not a valid Twitch user"?</h3>
-        <p>This happens when you put special characters in a command. All Twitch usernames are limited to a-z 0-9 and underscores, so trying to enter a username that is definitely invalid will not work. This is to help us reduce our API calls to Twitch.</p>
-    </div>
-    <div class="section">
-        <h3>How do I add a custom message to a stream notification?</h3>
-        <p>You can simply add in the custom message after the command you would normally enter. For example: <code>twitch notif add #general twitchbot_discord Hey @everyone, TwitchBot is live!</code>. Markdown also works in descriptions.</p>
-    </div>
-    <div class="section">
-        <h3>How can I see who is set up for notifications?</h3>
-        <p>Type <code>twitch notif list #channel</code> to view the notifications set up in the specified channel.</p>
-    </div>
-    <div class="section">
-        <h3>How do I set up live checking?</h3>
-        <p>Type <code>twitch live_check role</code> replacing "role" with the exact, case-sensitive name of the role you want to add to users when they go live. If you get a permission error, see the question below.</p>
-    </div>
-    <div class="section">
-        <h3>Live checking isn't working</h3>
-        <p>TwitchBot most likely doesn't have adequate permissions to add and remove users' roles. TwitchBot needs the manage roles permission to do live checking. The role that you want to add to live checking should also be below the role named TwitchBot.</p>
-    </div>
-    <div class="section">
-        <br><br><br><br>
-        <h3>Question not listed, or need more help?</h3>
-        <p>Feel free to join the <a href="https://discord.gg/UNYzJqV">support server</a> and one of our helpful staff members will answer your question.</p>
-        <br><br><br>
+        <table>
+            <tr><th>Command</th><th>Description</th></tr>
+            <tr><td>help</td><td>Shows bot help</td></tr>
+            <tr><td>info</td><td>Shows bot information</td></tr>
+            <tr><td>invite</td><td>Displays a link to add TwitchBot to your server</td></tr>
+            <tr><td>status</td><td>Shows Twitch API status</td></tr>
+            <tr><td>ping</td><td>Pong!</td></tr>
+            <tr><td>user</td><td>Gets info on a Twitch channel</td></tr>
+            <tr><td>stream user</td><td>Gets info on a channel's stream</td></tr>
+            <tr><td>stream watch</td><td>Shows a link to watch a Twitch stream in Discord</td></tr>
+            <tr><td>stream game</td><td>Fetches a random stream of someone playing the specified game.</td></tr>
+            <tr><td>stream top</td><td>Fetches a random stream that is popular right now</td></tr>
+            <tr><td>game</td><td>Gets info on a Twitch game</td></tr>
+            <tr><td>top</td><td>Gets the top ten most popular games on Twitch</td></tr>
+            <tr><td>clips from</td><td>Gets a random clip from the specified Twitch user</td></tr>
+            <tr><td>clips game</td><td>Gets a random clip from the specified game</td></tr>
+            <tr><td>clips trending</td><td>Gets a trending clip</td></tr>
+            <tr><td>clips uservoted</td><td>Gets one of the most popular clips voted by TwitchBot users</td></tr>
+            <tr><td>notif add</td><td>Adds a streamer notification for a streamer to the specified channel</td></tr>
+            <tr><td>notif remove</td><td>Removes a streamer notification</td></tr>
+            <tr><td>notif list</td><td>Lists active notifications for the specified channel</td></tr>
+            <tr><td>notif formatting</td><td>Shows variables that you can insert into streamer notification messages</td></tr>
+            <tr><td>live_role set</td><td>Sets the Live Role for the current server</td></tr>
+            <tr><td>live_role delete</td><td>Removes the Live Role configuration</td></tr>
+            <tr><td>live_role view</td><td>Tells you which role is currently set up</td></tr>
+            <tr><td>listen</td><td>Listen to a Twitch stream in the current voice channel</td></tr>
+            <tr><td>nowplaying</td><td>Shows the stream that is currently playing, if any</td></tr>
+            <tr><td>leave</td><td>Leave the voice channel</td></tr>
+            <tr><td>lfg view</td><td>View active lfg posts for a game</td></tr>
+            <tr><td>lfg join</td><td>Join someone else's group</td></tr>
+            <tr><td>lfg start</td><td>Start an lfg post</td></tr>
+            <tr><td>lfg groupmgr</td><td>Group manager for lfg (To view commands type <code>twitch lfg help</code>)</td></tr>
+            <tr><td>overwatch</td><td>Shows Overwatch player stats</td></tr>
+            <tr><td>fortnite</td><td>Shows Fortnite player stats</td></tr>
+            <tr><td>ban</td><td>Bans a user.</td></tr>
+            <tr><td>kick</td><td>Kicks a user.</td></tr>
+            <tr><td>purge</td><td>Deletes the specified amount of messages.</td></tr>
+            <tr><td>filter set</td><td>Sets the server-wide toxicity filter</td></tr>
+            <tr><td>filter remove</td><td>Removes the server-wide toxicity filter.</td></tr>
+        </table>
     </div>
     <footer>
         <div class="content">
