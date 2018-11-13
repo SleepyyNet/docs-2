@@ -76,58 +76,39 @@
         </span>
     </nav>
     <header minimal>
-        <h1>Frequently Asked Questions</h1>
-        <h2 style="max-width:550px;margin:1em auto;">These are the most frequently asked questions about TwitchBot and its features.</h2>
+        <h1>TwitchBot Help Center</h1>
+        <h2 style="max-width:550px;margin:1em auto;">Learn how to use TwitchBot, troubleshoot, get help from a support agent, and more.</h2>
     </header>
-    <div class="section">
-        <h3>What is TwitchBot's prefix?</h3>
-        <p>TwitchBot's prefix is <code>twitch</code> (or <code>!twitch</code>). The bot doesn't respond to commands through anything else or @mentions.</p>
-    </div>
-    <div class="section">
-        <h3>What are TwitchBot's commands?</h3>
-        <p>You can view a list of commands by typing <code>twitch commands</code> or by going to the <a href="https://twitchbot.io/commands">commands page</a>. If you need more general help, type <code>twitch help</code>.</p>
-    </div>
-    <div class="section">
-        <h3>Why does TwitchBot show a blank help message?</h3>
-        <p>This is because you have disabled a setting within Discord. You need to <a href="https://imgur.com/yfoOqe8" target="_blank">re-enable this setting</a> by going to Settings > Text & Images and turning on the setting named "Show website preview info from links pasted into chat".</p>
-    </div>
-    <div class="section">
-        <h3>How do I upvote TwitchBot?</h3>
-        <p>Go to <a href="https://discordbots.org/bot/twitch/vote" target="_blank">https://discordbots.org/bot/twitch/vote</a>. Log in with Discord if you haven't already, and press the button that says "Vote for this bot". Keep in mind that you need to vote every 12 hours to use audio.</p>
-    </div>
-    <div class="section">
-        <h3>I just upvoted, why doesn't the bot say I've done it?</h3>
-        <p>This is due to a delay in the upvoting website. Please wait about 5 to 10 minutes for your upvote to register.</p>
-    </div>
-    <div class="section">
-        <h3>How do I add a stream notification?</h3>
-        <p>You need to specify the streamer's Twitch name and the Discord channel you want it to trigger in. For example, typing <code>twitch notif add #general twitchbot_discord</code> will add a notification for twitch.tv/twitchbot_discord in the general channel.</p>
-    </div>
-    <div class="section">
-        <h3>Why do I get "not a valid Twitch user"?</h3>
-        <p>This happens when you put special characters in a command. All Twitch usernames are limited to a-z 0-9 and underscores, so trying to enter a username that is definitely invalid will not work. This is to help us reduce our API calls to Twitch.</p>
-    </div>
-    <div class="section">
-        <h3>How do I add a custom message to a stream notification?</h3>
-        <p>You can simply add in the custom message after the command you would normally enter. For example: <code>twitch notif add #general twitchbot_discord Hey @everyone, TwitchBot is live!</code>. Markdown also works in descriptions.</p>
-    </div>
-    <div class="section">
-        <h3>How can I see who is set up for notifications?</h3>
-        <p>Type <code>twitch notif list #channel</code> to view the notifications set up in the specified channel.</p>
-    </div>
-    <div class="section">
-        <h3>How do I set up live checking?</h3>
-        <p>Type <code>twitch live_check role</code> replacing "role" with the exact, case-sensitive name of the role you want to add to users when they go live. If you get a permission error, see the question below.</p>
-    </div>
-    <div class="section">
-        <h3>Live checking isn't working</h3>
-        <p>TwitchBot most likely doesn't have adequate permissions to add and remove users' roles. TwitchBot needs the manage roles permission to do live checking. The role that you want to add to live checking should also be below the role named TwitchBot.</p>
-    </div>
-    <div class="section">
-        <br><br><br><br>
-        <h3>Question not listed, or need more help?</h3>
-        <p>Feel free to join the <a href="https://discord.gg/UNYzJqV">support server</a> and one of our helpful staff members will answer your question.</p>
-        <br><br><br>
+    <div class="section" style="max-width:910px">
+        <div class="cards-alt">
+            <a href="https://discord.gg/UNYzJqV">
+                <div class="card-alt">
+                    <img src="https://img.icons8.com/nolan/96/000000/discord-logo" alt="Discord">
+                    <div class="gr">
+                        <h3>Support server</h3>
+                        <p>Need help with something not listed on the website? Join our Discord and get help from a support representative.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/commands">
+                <div class="card-alt">
+                    <img src="https://img.icons8.com/nolan/96/000000/keyboard.png" alt="Commands">
+                    <div class="gr">
+                        <h3>Commands list</h3>
+                        <p>Take a look at all that TwitchBot has to offer with a simple commands list. For a list of commands on Discord, type <code>!twitch help</code>.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/faq">
+                <div class="card-alt">
+                    <img src="https://img.icons8.com/nolan/96/000000/ask-question.png" alt="Common questions">
+                    <div class="gr">
+                        <h3>Frequently asked questions</h3>
+                        <p>If you have a less complicated question, such as how to add a notification, please refer to this list.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
     <footer>
         <div class="content">

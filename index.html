@@ -46,12 +46,11 @@
 </head>
 <body>
     <div class="logged-in-ctx" style="display:none">
-        <a href="#features" only-mobile>Features</a>
-        <a href="#invite" only-mobile>Invite</a>
-        <a href="/faq" only-mobile>FAQ</a>
+        <a href="/#features" only-mobile>Features</a>
+        <a href="/#invite" only-mobile>Invite</a>
+        <a href="/help-center" only-mobile>Help & How to Use</a>
         <a href="https://discord.gg/UNYzJqV" only-mobile>Support</a>
         <a href="https://discordbots.org/bot/twitch/vote" only-mobile>Upvote</a>
-        <a href="/commands">Commands</a>
         <a href="http://dash.twitchbot.io">Dashboard (beta)</a>
         <div class="sep"></div>
         <a href="https://medium.com/twitchbot">Blog</a>
@@ -63,31 +62,30 @@
         <a href="https://botsfordiscord.com/bot/375805687529209857">botsfordiscord.com</a>
         <a href="https://discordbotlist.com/bots/375805687529209857">discordbotlist.com</a>
         <div class="sep"></div>
-        <a href="/premium">TwitchBot Premium</a>
+        <a href="/premium">Premium</a>
         <a href="/partners">Partners</a>
         <a href="/translators">Translators</a>
         <div class="sep"></div>
         <a href="/terms">Legal</a>
     </div>
-    <div class="banner">
+    <nav>
+        <span><a class="main" href="/">TwitchBot</a></span>
+        <span style="padding-left:10px;float:right">
+            <a href="/#features" no-mobile>Features</a>
+            <a href="/#invite" no-mobile>Invite</a>
+            <a href="/help-center" no-mobile>Help & How to Use</a>
+            <a href="https://discordbots.org/bot/twitch/vote" no-mobile>Upvote</a>
+            <a id="more" href="javascript:toggleNavOpts()"><i class="fas fa-chevron-down"></i></a>
+        </span>
+    </nav>
+    <!--<div class="banner">
         &nbsp;You can now upvote TwitchBot on DBL to get TwitchBot Premium for free! <a href="https://medium.com/twitchbot/new-dashboard-updates-c1557aa19efb">Learn more</a>
         <i onclick="this.parentElement.style.display='none';" class="fas fa-times" style='cursor:pointer;opacity:.5;float:right'></i>
-    </div>
+    </div>-->
     <div class="invite-banner" style="display:none">
         &nbsp;Thanks for inviting TwitchBot to your server!
         <i class="fas fa-times" onclick="this.parentElement.style.display='none';" style="cursor:pointer;opacity:.5;float:right"></i>
     </div>
-    <nav>
-        <span><a class="main" href="/">TwitchBot</a></span>
-        <span style="padding-left:10px;float:right">
-            <a href="#features" no-mobile>Features</a>
-            <a href="#invite" no-mobile>Invite</a>
-            <a href="/faq" no-mobile>FAQ</a>
-            <a href="https://discord.gg/UNYzJqV" no-mobile>Support</a>
-            <a href="https://discordbots.org/bot/twitch/vote" no-mobile>Upvote <span id="upvote-count">0</span></a>
-            <a id="more" href="javascript:toggleNavOpts()"><i class="fas fa-chevron-down"></i></a>
-        </span>
-    </nav>
     <header>
         <h1 class="animated fadeInUp">The best Twitch bot for Discord</h1>
         <h2 style="max-width:550px;margin:1em auto;" class="animated fadeInUp">
@@ -97,20 +95,10 @@
             <a class="button default" href="https://discordapp.com/oauth2/authorize?client_id=375805687529209857&permissions=305589334&scope=bot&response_type=code&redirect_uri=https://twitchbot.io/?invited">Add to Discord</a>
             <a class="button" href="https://discord.gg/UNYzJqV">Support Server</a>
         </p>
-        <span style="opacity:.8;font-size:.8em;display:block;margin-top:28px;" class="animated fadeInUp delay-1s">TwitchBot is trusted in <b id="servcnt">0</b> servers</span>
+        <span style="opacity:.8;font-size:.8em;display:block;margin-top:28px;" class="animated fadeInUp delay-1s">
+            <a href="#features" style="color:white;text-decoration:underline;opacity:.8">Learn more about what TwitchBot does</a>
+        </span>
     </header>
-    <script async defer>
-    $.getJSON("https://discordbots.org/api/bots/twitch", function(data) {
-        $("#servcnt").html(data.server_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-        $("#upvote-count").html(data.points.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-    }).fail(function() {
-        $("#servcnt").parent().css("display", "none");
-        $("#upvote-count").parent().css("display", "none");
-    });
-    if (window.location.search.includes("invited")) {
-        $(".invite-banner").css("display", "block");
-    }
-    </script>
     <a name="features"></a>
     <div class="section animated fadeInUp slow">
         <div class="cards">
