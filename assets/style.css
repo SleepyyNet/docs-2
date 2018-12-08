@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Poppins:600|Inconsolata');
-@font-face {
-    font-family: 'Uni Sans';
-    src: url("Uni Sans Heavy.otf");
-}
-
 body {
     background-color: #17242d;
     color: #eef1f2;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    margin-top: 57px;
+    margin-top: 63px;
 }
 
 h1, h2, h3, h4, h5, h6 {font-weight: 400;}
@@ -38,7 +33,6 @@ nav {
     left: 0;
     right: 0;
     z-index: 10000;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
 }
 
 nav a:not(.main) {
@@ -49,15 +43,14 @@ nav a:not(.main) {
 
 nav .main {
     color: white;
+    font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
 header {
     min-height: 400px;
     background: #54338C url('bg.svg') no-repeat center center;
     background-size: cover;
-    padding: 1em;
-    padding-top: 5em;
-    padding-bottom: 2em;
+    padding: 2em 1em;
     text-align: center;
 }
 
@@ -66,10 +59,16 @@ header[minimal] {
 }
 
 header h1 {
-    font-size: 2.75em;
-    font-family: 'Uni Sans', 'Poppins', 'Roboto', sans-serif;
-    font-weight: 400;
+    font-size: 2em;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-weight: 600;
     margin-top: 0;
+}
+
+header h2 {
+    max-width:550px;
+    margin:1em auto;
+    font-size: 1.3em;
 }
 
 .section {
@@ -84,18 +83,19 @@ header h1 {
     z-index: 10001;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     position: fixed;
-    width: 140px;
+    width: 200px;
     text-align: left;
+    border-radius: 5px;
 }
 
 .logged-in-ctx .sep {
     height: 1px;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255,255,255,.1);
     margin: 0 .5rem;
 }
 
 .logged-in-ctx a {
-    margin: .5rem;
+    margin: .75rem 1rem;
     padding: 0 !important;
     display: block;
     color: white;
@@ -116,6 +116,10 @@ header h1 {
 
 .button:not(.default) {
     background-color: #283f4f;
+}
+
+header.hero .button {
+    font-size: 1.05em;
 }
 
 .cards-alt {
@@ -158,6 +162,13 @@ header h1 {
     text-decoration: none !important;
 }
 
+.section h2 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 0;
+}
+
 .section h3 {
     font-family: 'Poppins', 'Roboto', sans-serif;
     font-weight: 600;
@@ -166,7 +177,7 @@ header h1 {
 }
 
 .section h1 {
-    font-family: 'Uni Sans', 'Poppins', 'Roboto', sans-serif;
+    font-family: 'Poppins', 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 2.5em;
 }
@@ -300,6 +311,19 @@ footer span {
     background-color: #eef1f2;
 }
 
+.badge {
+    background-color: #f04747;
+    font-size: 15px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    padding: 1px 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
 #upvote-count {
     background-color: white;
     color: black;
@@ -334,7 +358,72 @@ td:not(:last-of-type) {
     display: none;
 }
 
-@media (max-width: 520px) {
+.tier {
+    color: white;
+    border: 1px solid rgba(255,255,255,.2);
+    width: 250px;
+    margin: 0 1rem;
+    border-radius: 7px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.tier h3 {
+    font-weight: 300;
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.5em;
+}
+
+.tier .item {
+    padding: 1rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+    opacity: .8;
+    font-size: .9em;
+}
+
+.tier-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tier-2 .item {
+    width: 250px;
+    display: inline-block;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tier-2 .item .fas {
+    color: #54338C;
+    flex: 0 0;
+    margin-right: 10px;
+}
+
+.tier-2 .item span {
+    flex: 1 1;
+    display: block;
+    text-align: left;
+}
+
+.dark-wrapper {
+    background-color: #12191f;
+}
+
+.dark-wrapper .section {
+    margin: 0 auto;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+@media (max-width: 540px) {
     *[no-mobile] {
         display: none;
     }
@@ -353,7 +442,8 @@ td:not(:last-of-type) {
     }
 
     header {
-        padding-top: 10px;
+        padding-top: 30px;
+        min-height: 300px;
     }
 
     header h1 {
@@ -370,9 +460,5 @@ td:not(:last-of-type) {
 
     .logged-in-ctx a {
         font-size: .9em;
-    }
-
-    .logged-in-ctx {
-        width: 155px;
     }
 }

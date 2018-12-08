@@ -1,9 +1,9 @@
 var isOpen = false;
 
 function moveCtxMenu() {
-    var pos = $("#more").position();
+    var pos = $("a#more").position();
     $(".logged-in-ctx").css("top", pos.top + 25);
-    $(".logged-in-ctx").css("left", pos.left - 110);
+    $(".logged-in-ctx").css("left", pos.left - 170);
 }
 
 function toggleNavOpts() {
