@@ -76,12 +76,14 @@
             <a id="more" href="javascript:toggleNavOpts()"><i class="fas fa-chevron-down"></i></a>
         </span>
     </nav>
-    <!--<div class="banner">
-        &nbsp;You can now upvote TwitchBot on DBL to get TwitchBot Premium for free! <a href="https://medium.com/twitchbot/new-dashboard-updates-c1557aa19efb">Learn more</a>
+    <div class="banner">
+        <img src="https://canary.discordapp.com/assets/739c1934cfb00cde067e3d45d49c5a45.svg" height="18" style="position:relative;top:3px;display:inline-block;margin-top:-10px">
+        'tis the season for giving! Join our <a href="https://discord.gg/UNYzJqV" target="_blank">Discord server</a> for a chance at winning some great prizes.
         <i onclick="this.parentElement.style.display='none';" class="fas fa-times" style='cursor:pointer;opacity:.5;float:right'></i>
-    </div>-->
+    </div>
     <div class="invite-banner" style="display:none">
         &nbsp;Thanks for inviting TwitchBot to your server!
+        <a href="https://support.twitchbot.io/articles/d1b179de-dc32-4066-845f-7dd66aa02493" target="_blank">Learn how to get started</a>.
         <i class="fas fa-times" onclick="this.parentElement.style.display='none';" style="cursor:pointer;opacity:.5;float:right"></i>
     </div>
     <script>
@@ -92,8 +94,12 @@
         });
         return vars;
     }
-    if (getUrlVars()['invited'] != undefined) {
+    if (window.location.toString().indexOf("invited") != -1) {
+        var urlParams = getUrlVars();
         $(".invite-banner").css("display", "block");
+        if (urlParams.error != undefined) {
+            $(".invite-banner").text(`Something went wrong when inviting TwitchBot: ${decodeURIComponent(urlParams.error)}`);
+        }
     }
     </script>
     <header class="hero">
