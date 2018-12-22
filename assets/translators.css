@@ -289,6 +289,10 @@ code.preview .k {
     background-color: rgb(250, 166, 26);
 }
 
+*[only-mobile], .logged-in-ctx a[only-mobile] {
+    display: none;
+}
+
 
 @media (max-width: 540px) {
     *[no-mobile] {
