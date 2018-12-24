@@ -281,7 +281,7 @@ code.preview .k {
     height: 50px;
 }
 
-.phase .phase-marker.completed {
+.phase .phase-marker.completed, .progress .marker.completed {
     background-color: rgb(67, 181, 129);
 }
 
