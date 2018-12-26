@@ -15,6 +15,7 @@
     <meta name="msapplication-navbutton-color" content="#54338C">
     <meta name="apple-mobile-web-app-status-bar-style" content="#54338C">
     <title>TwitchBot Translators</title>
+    <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="/assets/translators.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -65,10 +66,13 @@
             <a href="/premium" no-mobile>Premium</a>
             <a href="https://support.twitchbot.io" no-mobile>Support</a>
             <a href="https://dash.twitchbot.io" no-mobile>Dashboard</a>
+        </span>
+        <span style="float:right;padding-top:3px;padding-bottom:-3px;">
+            <a href="https://discord.gg/UNYzJqV" target="_blank"><i class="fab fa-discord"></i></a>
             <a id="more" href="javascript:toggleNavOpts()"><i class="fas fa-chevron-down"></i></a>
         </span>
     </nav>
-    <header>
+    <header minimal>
         <div class="wrapper"></div>
         <div style="max-width:600px;margin:auto">
             <h1>Translate TwitchBot</h1>
@@ -76,7 +80,7 @@
             <p>
                 <br>
                 <!--<span style='font-size:.8em;opacity:.5;'>Translator applications are currently closed.</span>-->
-                <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScIh5GK6nlJTvAqqfrVYxpDAePlsHYwAqbZwb-aXXBMJLFyuw/viewform?usp=sf_link">Apply Now</a>
+                <a class="button default" href="https://docs.google.com/forms/d/e/1FAIpQLScIh5GK6nlJTvAqqfrVYxpDAePlsHYwAqbZwb-aXXBMJLFyuw/viewform?usp=sf_link">Apply Now</a>
                 <a class="button" href="#body">Learn More</a>
             </p>
         </div>
@@ -244,9 +248,9 @@
             <h2>
                 <img class="twemoji" src="https://canary.discordapp.com/assets/42c8e75954826dd9cb589a6e17322f7a.svg" alt="CZ flag">
                 Czech
-                <small>0%</small>
+                <small>30%</small>
             </h2>
-            <div class="progress"><div class="marker" style='width:0%'></div></div>
+            <div class="progress"><div class="marker" style='width:30%'></div></div>
         </div>
         <div class="lang">
             <h2>
@@ -302,22 +306,37 @@
             Full release
         </div>
     </div>
-    <div class="end">
-        <h1>Apply Now</h1>
-        <p>
-            We're super excited that you're here to help make TwitchBot usable by a more diverse crowd.
-            Please make sure that you join our
-            <a href="https://l.disgd.pw/support" target="_blank">Discord server</a>
-            so we can contact you.
-        </p>
-        <p>
-            <br>
-            <br>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScIh5GK6nlJTvAqqfrVYxpDAePlsHYwAqbZwb-aXXBMJLFyuw/viewform?usp=sf_link" class="button">Help us Translate</a>
-            <!--<span style='font-size:.8em;opacity:.5;'>Translator applications are currently closed.</span>-->
-        </p>
+    <div class="dark-wrapper animated fadeInUp">
+        <div style="height:150px;overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C247.08,143.87 241.97,1.77 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke:none;fill:#17242d;"></path></svg></div>
+        <div class="section">
+            <h1>Apply Now</h1>
+            <p>
+                We're super excited that you're here to help make TwitchBot usable by a more diverse crowd.
+                Please make sure that you join our
+                <a href="https://link.twitchbot.io/support" target="_blank">Discord server</a>
+                so we can contact you.
+            </p>
+            <p style="padding-bottom:3em">
+                <br>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScIh5GK6nlJTvAqqfrVYxpDAePlsHYwAqbZwb-aXXBMJLFyuw/viewform?usp=sf_link" class="button default">Help us Translate</a>
+                <!--<span style='font-size:.8em;opacity:.5;'>Translator applications are currently closed.</span>-->
+            </p>
+        </div>
     </div>
+    <footer style="margin:0">
+            <h3 style='font-family:"Poppins","Roboto",sans-serif;font-size:1.5em;margin-bottom:7px'>TwitchBot</h3>
+            <span style="margin-top:5px;">
+                <a class="brand discord" href="https://discord.gg/UNYzJqV"><i class="fab fa-discord"></i></a>
+                <a class="brand twitch" href="https://twitch.tv/twitchbot_discord"><i class="fab fa-twitch"></i></a>
+                <a class="brand patreon" href="https://www.patreon.com/devakira"><i class="fab fa-patreon"></i></a>
+                <a class="brand paypal" href="https://www.paypal.me/akireee"><i class="fab fa-paypal"></i></a>
+                <a class="brand github" href="https://github.com/twitchbot-discord"><i class="fab fa-github"></i></a>
+                <a class="brand twitter" href="https://twitter.com/AkiraDev_"><i class="fab fa-twitter"></i></a>
+            </span>
+            <span style="margin-top:20px">Made by <a href="https://disgd.pw">Akira#4587</a>. Copyright &copy; 2018.</span>
+            <span style="font-size:.75em;opacity:.6;margin-top:10px"><a href="https://icons8.com">Icons by icons8.com</a></span>
+        </div>
+    </footer>
     <script async defer src="/assets/nav.js"></script>
-    <script async defer src="/assets/confetti-words.js"></script>
 </body>
 </html>
