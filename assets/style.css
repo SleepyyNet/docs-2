@@ -274,11 +274,18 @@ footer span {
 .brand.github {
     color: #333;
     background-color: white;
-    padding: 7.5px 9px 9px;
+    padding-left: 10px;
+    padding-right: 8px;
 }
 
 .brand.twitch {
     background-color: #54338C;
+    padding-left: 11px;
+    padding-right: 7.5px;
+}
+
+.brand.facebook {
+    background-color: #3b5998;
     padding-left: 11px;
     padding-right: 7.5px;
 }

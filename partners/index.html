@@ -3,21 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Information and applications about the TwitchBot Partners and Affiliates.">
-    <!-- Open Graph Protocol - https://ogp.me -->
-    <meta property="og:title" content="Partners - TwitchBot">
-    <meta property="og:url" content="https://twitchbot.io/partners">
-    <meta property="og:description" content="Information and applications about the TwitchBot Partners and Affiliates.">
-    <meta property="og:image" content="https://cdn.discordapp.com/avatars/375805687529209857/7528f050ec2521877bcfa1abe3cfbab4.png">
-    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#54338C">
     <meta name="msapplication-navbutton-color" content="#54338C">
     <meta name="apple-mobile-web-app-status-bar-style" content="#54338C">
-    <title>TwitchBot Partners & Affiliates</title>
-    <link rel="stylesheet" href="/assets/partners.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <meta name="description" content="Frequently asked questions about TwitchBot and its features.">
+    <!-- Open Graph Protocol - https://ogp.me -->
+    <meta property="og:title" content="Partners - TwitchBot">
+    <meta property="og:url" content="https://twitchbot.io/partners">
+    <meta property="og:description" content="Use TwitchBot for your eSports org or streamer Discord server.">
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/375805687529209857/7528f050ec2521877bcfa1abe3cfbab4.png">
+    <meta property="og:type" content="website">
+    <title>Partners - TwitchBot</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89117598-3"></script>
     <script>
@@ -39,114 +38,144 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
     <!-- End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async defer src="/assets/nav.js"></script>
 </head>
 <body>
-    <div class="notice">
-        The TwitchBot Partners program is no longer accepting applicants. <a href="https://discord.gg/UNYzJqV" style="color:white;text-decoration:underline">Join the Discord</a> for more info.
-    </div>
     <div class="logged-in-ctx" style="display:none">
+        <a href="/#features" only-mobile>Features</a>
+        <a href="https://discordapp.com/oauth2/authorize?client_id=375805687529209857&permissions=305589334&scope=bot&response_type=code&redirect_uri=https://twitchbot.io/?invited">Invite</a>
+        <a href="https://support.twitchbot.io" only-mobile>Support</a>
+        <a href="https://discordbots.org/bot/twitch/vote">Upvote</a>
+        <a href="https://dash.twitchbot.io" only-mobile>Dashboard</a>
         <a href="/commands">Commands</a>
-        <a href="http://dash.twitchbot.io">Dashboard (beta)</a>
+        <div class="sep"></div>
+        <a href="/premium" only-mobile>Premium</a>
+        <a href="/partners">Partners</a>
+        <a href="/translators">Translators</a>
         <div class="sep"></div>
         <a href="https://medium.com/twitchbot">Blog</a>
         <a href="https://twitch.tv/twitchbot_discord">Twitch</a>
         <a href="https://github.com/twitchbot-discord">GitHub</a>
         <div class="sep"></div>
-        <a href="https://discordbots.org/bot/twitch">discordbots.org</a>
-        <a href="https://bots.discord.pw/bots/375805687529209857">bots.discord.pw</a>
-        <a href="https://botsfordiscord.com/bot/375805687529209857">botsfordiscord.com</a>
-        <a href="https://discordbotlist.com/bots/375805687529209857">discordbotlist.com</a>
-        <div class="sep"></div>
-        <a href="/premium">TwitchBot Premium</a>
-        <a href="/partners">Partners</a>
-        <a href="/translators">Translators</a>
-        <div class="sep"></div>
         <a href="/terms">Legal</a>
+        <a href="/bot-lists">Bot lists</a>
     </div>
     <nav>
         <span><a class="main" href="/">TwitchBot</a></span>
-        <span style="padding-left:10px">
-            <a href="/#features">Features</a>
-            <a href="/#invite">Invite</a>
-            <a href="how-to.html?utm_source=self&utm_medium=navbar">FAQ</a>
-            <a href="https://discord.me/konomi">Support</a>
-            <a href="https://discordbots.org/bot/twitch/vote">Upvote&ensp;<div class="bubble-alert" title="Upvoting the bot helps support us, and you also get rewards for doing it!">!</div></a>
+        <span style="padding-left:10px;">
+            <a href="/#features" no-mobile>Features</a>
+            <a href="/premium" no-mobile>Premium</a>
+            <a href="https://support.twitchbot.io" no-mobile>Support</a>
+            <a href="https://dash.twitchbot.io" no-mobile>Dashboard</a>
+        </span>
+        <span style="float:right;padding-top:3px;padding-bottom:-3px;">
+            <a href="https://discord.gg/UNYzJqV" target="_blank"><i class="fab fa-discord"></i></a>
             <a id="more" href="javascript:toggleNavOpts()"><i class="fas fa-chevron-down"></i></a>
         </span>
     </nav>
-    <header>
-        <div class="wrapper"></div>
-        <div style="max-width:600px;margin:auto">
-            <h1>TwitchBot Partners</h1>
-            <h2>We're looking for passionate Twitch streamers who use TwitchBot in their servers</h2>
-            <p><br><a class="button" href="#body">Learn More</a></p>
-        </div>
+    <header minimal>
+        <h1>TwitchBot Partners</h1>
+        <h2 style="max-width:550px;margin:1em auto;">Get exclusive TwitchBot features for your eSports organization or streamer Discord server.</h2>
+        <p style="margin-top:2em;line-height:60px">
+            <a class="button default" href="https://docs.google.com/forms/d/e/1FAIpQLSdyyVe0erZbfbv2iHW1Tiap2Bw_Y2fBkKYv3A5dwx-OKGVqPg/viewform">Apply Now</a>
+            <a class="button" href="#requirements">Learn more</a>
+        </p>
+        <span style="opacity:.8;font-size:.8em;display:block;margin-top:28px;" class="animated fadeInUp delay-1s">
+            <a href="/premium" style="color:white;text-decoration:underline;opacity:.8">Not a streamer or eSports team rep?</a>
+        </span>
     </header>
-    <a name="body"></a>
-    <div class="section">
+    <a name="requirements"></a>
+    <div class="section" style="text-align:center">
         <h2>Requirements</h2>
         <div class="tier">
-            <h3>Affiliates</h3>
+            <h3>Streamers</h3>
             <div class="item">
-                50 followers
+                1,000 followers
+            </div>
+            <div class="item">
+                Discord server
+            </div>
+        </div>
+        <div class="tier">
+            <h3>eSports Teams</h3>
+            <div class="item">
+                average 1,000 followers per streamer
             </div>
             <div class="item">
                 Discord server
             </div>
             <div class="item">
-                100 views
-            </div>
-        </div>
-        <div class="tier">
-            <h3>Partners</h3>
-            <div class="item">
-                1,000 followers
+                1,000 followers on any non-Twitch social media platform
             </div>
             <div class="item">
-                100 members in Discord
-            </div>
-            <div class="item">
-                10,000 views
-            </div>
-            <div class="item">
-                Twitch partnered
-            </div>
-            <div class="item">
-                Discord partnered (optional)
+                Professionally recognized (eg. playing at professional tournaments)
             </div>
         </div>
     </div>
-    <div class="section">
-        <h2>Rewards</h2>
-        <div class="check-item">
-            <i class="material-icons">check</i> Gold patron status
+    <a name="features"></a>
+    <div class="section" style="text-align:center">
+        <h2 style="margin-bottom:0">Features</h2>
+        <p style="margin-top:.5em;margin-bottom:2em">Here's what you get as a partner.</p>
+        <div class="tier-2">
+            <div class="item">
+                <i class="fas fa-check"></i>
+                <span>Unlimited notifications
+            </div>
+            <div class="item">
+                <i class="fas fa-check"></i>
+                <span>Exclusive moderation commands</span>
+            </div>
+            <div class="item">
+                <i class="fas fa-check"></i>
+                <span>Skip upvoting for streams in voice chat</span>
+            </div>
+            <div class="item">
+                <i class="fas fa-check"></i>
+                <span>Early updates on new features</span>
+            </div>
+            <div class="item">
+                <i class="fas fa-check"></i>
+                <span>Channel / team promoted on our website</span>
+            </div>
+            <div class="item">
+                <i class="fas fa-check"></i>
+                <span>Access to partners role & channel on our server</span>
+            </div>
+            <div class="item">
+                <i class="fas fa-check"></i>
+                <span>Access to premium-only bot</span>
+            </div>
         </div>
-        <div class="check-item">
-            <i class="material-icons">check</i> A role in our server
-        </div>
-        <div class="check-item">
-            <i class="material-icons">check</i> We'll announce your stream
-        </div>
-        <div class="check-item">
-            <i class="material-icons">check</i> Access to early betas
-        </div>
-        <div class="check-item">
-            <i class="material-icons">check</i> Exclusive mod commands
-        </div>
-        <div class="check-item">
-            <i class="material-icons">check</i> No upvoting for audio
-        </div>
-        <div class="check-item">
-            <i class="material-icons">check</i> Premium bot (partners only)
-        </div>
-        <p><i>More rewards coming soon!</i></p>
     </div>
-    <div class="end">
-        <h1>Apply Now</h1>
-        <p>We'll get back to you within about 3 business days. Make sure you join our <a href="https://l.disgd.pw/support">Discord server</a> so we can DM you about your acceptance and give you your role to sync rewards.</p>
-        <p><br><br><a href="https://docs.google.com/forms/d/e/1FAIpQLSc-AmSYGM2L7YLUn18rWtNJ3kAJTrvEXjvavNavvmNoZe_5OQ/viewform?usp=sf_link" class="button">Apply</a>
+    <div class="section" style='text-align:center'>
+        <h1>Join TwitchBot Partners</h1>
+        <p>
+            We'll get back to you in within about 3 business days.
+            Make sure to join our
+            <a href="https://discordapp.com/invite/UNYzJqV" target="_blank">Discord server</a>
+            so we can message you about your acceptance and get your benefits configured.
+        </p>
+        <p style='font-size:1em;'>
+            <br>
+            <a class="button default" href="https://docs.google.com/forms/d/e/1FAIpQLSdyyVe0erZbfbv2iHW1Tiap2Bw_Y2fBkKYv3A5dwx-OKGVqPg/viewform">Apply Now</a>
+            <br><br><br>
+        </p>
     </div>
-    <script async defer src="/assets/nav.js"></script>
-    <script async defer src="/assets/confetti.js"></script>
+    <footer>
+        <div class="content">
+            <h3 style='font-family:"Poppins","Roboto",sans-serif;font-size:1.5em;margin-bottom:7px'>TwitchBot</h3>
+            <span style="margin-top:5px;">
+                <a class="brand discord" href="https://discord.gg/UNYzJqV"><i class="fab fa-discord"></i></a>
+                <a class="brand twitch" href="https://twitch.tv/twitchbot_discord"><i class="fab fa-twitch"></i></a>
+                <a class="brand patreon" href="https://www.patreon.com/devakira"><i class="fab fa-patreon"></i></a>
+                <a class="brand paypal" href="https://www.paypal.me/akireee"><i class="fab fa-paypal"></i></a>
+                <a class="brand github" href="https://github.com/twitchbot-discord"><i class="fab fa-github"></i></a>
+                <a class="brand twitter" href="https://twitter.com/AkiraDev_"><i class="fab fa-twitter"></i></a>
+            </span>
+            <span style="margin-top:20px">Made by <a href="https://disgd.pw">Akira#4587</a>. Copyright &copy; 2018.</span>
+            <span style="font-size:.75em;opacity:.6;margin-top:10px"><a href="https://icons8.com">Icons by icons8.com</a></span>
+        </div>
+    </footer>
 </body>
 </html>
