@@ -22,6 +22,11 @@
   </url>
   <url>
     <loc>https://twitchbot.io/bot-lists/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://twitchbot.io/languages/</loc>
+    <priority>0.5</priority>
   </url>
 </urlset>
 <!--<guid value="873428b8-777f-413e-a19f-c6a690fcefd8" />-->

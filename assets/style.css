@@ -141,6 +141,7 @@ header.hero .button {
     height: 86px;
     width: 86px;
     margin-right: 25px;
+    flex: auto 0 0;
 }
 
 .card-alt {
