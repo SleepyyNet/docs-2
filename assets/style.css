@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Poppins:600|Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Poppins:500|Inconsolata');
 body {
     background-color: #17242d;
     color: #eef1f2;
@@ -59,9 +59,7 @@ header[minimal] {
 }
 
 header h1 {
-    font-size: 2em;
-    font-family: 'Poppins', 'Roboto', sans-serif;
-    font-weight: 600;
+    font: 500 1.9em 'Poppins', 'Roboto', sans-serif;
     margin-top: 0;
 }
 
@@ -99,7 +97,7 @@ header h2 {
     padding: 0 !important;
     display: block;
     color: white;
-    opacity: .5;
+    opacity: .7;
     font-size: .8em;
 }
 
@@ -172,23 +170,17 @@ header .main-content {
 }
 
 .section h2 {
-    font-family: 'Poppins', 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 2em;
+    font: 500 1.9em 'Poppins', 'Roboto', sans-serif;
     margin-top: 0;
 }
 
 .section h3 {
-    font-family: 'Poppins', 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 1.5em;
+    font: 500 1.5em 'Poppins', 'Roboto', sans-serif;
     margin-top: 0;
 }
 
 .section h1 {
-    font-family: 'Poppins', 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 2.5em;
+    font: 500 2em 'Poppins', 'Roboto', sans-serif;
 }
 
 .section p {
@@ -206,6 +198,11 @@ header .main-content {
 
 .section a:not(.button):hover, footer a:hover {
     text-decoration: underline;
+}
+
+a.premium {
+    color: #FFD700 !important;
+    opacity: 1;
 }
 
 footer {
@@ -324,13 +321,11 @@ footer span {
 
 .badge {
     background-color: #f04747;
-    font-size: 15px;
-    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-family: 500 15px 'Poppins', 'Roboto', sans-serif;
     padding: 1px 5px;
     border-radius: 5px;
     vertical-align: middle;
     text-transform: uppercase;
-    font-weight: 600;
     display: inline-block;
     margin-bottom: 5px;
 }
@@ -454,7 +449,7 @@ td:not(:last-of-type) {
     transform:translateX(100%);
     position: absolute;
     z-index: 0;
-    animation: slide 4s infinite 2s;
+    animation: slide 3s infinite 2s;
     background: linear-gradient(130deg, rgba(255,255,255,0) 40%, rgba(255,255,255,0.3) 41%, rgba(255,255,255,0.3) 60%, rgba(128,186,232,0) 61%, rgba(125,185,232,0) 100%);
 }
 
@@ -520,5 +515,5 @@ td:not(:last-of-type) {
 
 @keyframes slide {
 	0% {transform:translateX(-100%);}
-	18% {transform:translateX(100%);}
+	30% {transform:translateX(100%);}
 }
