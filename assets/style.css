@@ -112,6 +112,7 @@ header h2 {
     cursor: pointer;
     white-space: nowrap;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-sizing: border-box;
 }
 
 .button:not(.default) {
@@ -120,6 +121,13 @@ header h2 {
 
 header.hero .button {
     font-size: 1.05em;
+    display: inline-block;
+    overflow: hidden;
+}
+
+header .main-content {
+    position: relative;
+    top: 1.5em;
 }
 
 .cards-alt {
@@ -247,6 +255,7 @@ footer span {
     padding-left: 10px;
     margin: 5px;
     border-bottom: none;
+    box-sizing: content-box;
 }
 
 .brand:nth-of-type(1) {
@@ -260,12 +269,6 @@ footer span {
 
 .brand.twitter {
     background-color: #1da1f2;
-}
-
-.brand.paypal {
-    background-color: #003087;
-    padding-left: 12px;
-    padding-right: 6.5px;
 }
 
 .brand.patreon {
@@ -431,6 +434,30 @@ td:not(:last-of-type) {
     text-align: center;
 }
 
+.shine-wrapper {
+    display: inline-block;
+}
+
+.shine-btn {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+}
+
+.shine {
+    content:'';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform:translateX(100%);
+    position: absolute;
+    z-index: 0;
+    animation: slide 4s infinite 2s;
+    background: linear-gradient(130deg, rgba(255,255,255,0) 40%, rgba(255,255,255,0.3) 41%, rgba(255,255,255,0.3) 60%, rgba(128,186,232,0) 61%, rgba(125,185,232,0) 100%);
+}
+
 @media screen and (max-width: 540px) {
     *[no-mobile] {
         display: none;
@@ -489,4 +516,9 @@ td:not(:last-of-type) {
     footer {
         text-align: center;
     }
+}
+
+@keyframes slide {
+	0% {transform:translateX(-100%);}
+	18% {transform:translateX(100%);}
 }
